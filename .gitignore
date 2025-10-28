@@ -1,9 +1,0 @@
-target/
-*.log
-*.class
-.idea/
-.vscode/
-*.iml
-mvnw
-mvnw.cmd
-.DS_Store
