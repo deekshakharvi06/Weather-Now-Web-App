@@ -1,3 +1,4 @@
+// open Meteo API
 const apiUrl = "https://api.open-meteo.com/v1/forecast";
 
 async function getWeather() {
@@ -20,7 +21,7 @@ async function getWeather() {
 
     const { latitude, longitude, name, country } = geoData.results[0];
 
-    // Get current weather data
+    // Get current weather data using latitde and longitude
     const weatherUrl = `${apiUrl}?latitude=${latitude}&longitude=${longitude}&current_weather=true`;
     const weatherResponse = await fetch(weatherUrl);
     const weatherData = await weatherResponse.json();
@@ -46,7 +47,7 @@ async function getWeather() {
   }
 }
 
-// Converts weather code to readable text
+// Converts weather code to readable text (climate condition)
 function getWeatherDescription(code) {
   const weatherCodes = {
     0: "Clear Sky ☀️",
