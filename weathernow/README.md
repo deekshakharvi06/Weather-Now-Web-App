@@ -28,3 +28,9 @@ Temperature (°C)
 Wind speed (km/h)
 Weather condition code (which represents the climate type)
 JavaScript processes the returned data and displays it neatly on the screen.
+
+Input
+![Input](input.png)
+
+Output
+![Output](output.png)
